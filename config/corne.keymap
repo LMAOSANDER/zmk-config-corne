@@ -32,10 +32,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &kp FSLASH &kp N9 &kp N8 &kp N7 &kp STAR       &trans   &trans   &trans &trans    &trans &kp BSPC
-   &kp ESC   &kp minus  &kp N3 &kp N2 &kp N1 &kp plus        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LCTRL &kp x      &kp N6 &kp N5 &kp N4 &kp prcnt       &trans   &trans   &trans &trans    &trans &trans
-                             &kp LGUI &trans &kp SPACE       &kp LSHIFT &trans &kp RALT
+   &kp TAB   &kp FSLH  &kp N9 &kp N8 &kp N7 &kp STAR        &trans   &trans   &trans &trans    &trans &kp BSPC
+   &kp ESC   &kp minus &kp N3 &kp N2 &kp N1 &kp plus        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LCTRL &kp x     &kp N6 &kp N5 &kp N4 &kp prcnt       &trans   &trans   &trans &trans    &trans &trans
+                            &kp LGUI &trans &kp SPACE       &kp N0 &trans &kp RALT
                         >;
                 };
 
@@ -46,10 +46,10 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp tab   &kp grave &kp LT    &kp GT     &kp minus &kp pipe   &kp caret &kp lbrc  &kp rbrc  &kp dllr &kp under &kp bspc
-   &kp lctrl &kp excl  &kp STAR &kp FSLASH &kp EQUAL &kp amps   &kp hash  &kp lpar  &kp rpar  &kp SEMI &kp DQT   &kp RET
-   &kp lshft &kp tilde &kp plus  &kp lbkt   &kp rbkt  &kp prcnt  &kp at    &kp COLON &kp COMMA &kp DOT  &kp bslh  &kp SQT
-                                      &kp LGUI &trans &kp space  &kp ret &trans &kp ralt
+   &kp tab   &kp grave &kp LT   &kp GT     &kp minus &kp pipe    &kp caret &kp lbrc  &kp rbrc  &kp dllr &kp under &kp bspc
+   &kp lctrl &kp excl  &kp STAR &kp FSLASH &kp EQUAL &kp amps    &kp hash  &kp lpar  &kp rpar  &kp SEMI &kp DQT   &kp RET
+   &kp lshft &kp tilde &kp plus &kp lbkt   &kp rbkt  &kp prcnt   &kp at    &kp COLON &kp COMMA &kp DOT  &kp bslh  &kp SQT
+                                     &kp LGUI &trans &kp space   &kp LSHIFT &trans &kp ralt
                         >;
                 };
         };

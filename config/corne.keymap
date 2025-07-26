@@ -32,7 +32,7 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &kp FSLASH &kp N9 &kp N8 &kp N7 &kp astrk       &trand   &trans   &trans &trans    &kp BSPC
+   &kp TAB   &kp FSLASH &kp N9 &kp N8 &kp N7 &kp astrk       &trand   &trans   &trans &trans    &trans &kp BSPC
    &kp ESC   &kp minus  &kp N3 &kp N2 &kp N1 &kp plus        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LCTRL &kp x      &kp N6 &kp N5 &kp N4 &kp prcnt       &trans   &trans   &trans &trans    &trans &trans
                              &kp LGUI &trans &kp SPACE       &kp LSHIFT &trans &kp RALT

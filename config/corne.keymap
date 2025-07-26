@@ -46,9 +46,9 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &kp grave &kp LT   &kp GT     &kp MINUS &kp pipe    &kp caret &kp lbrc  &kp rbrc  &kp dllr &kp under &kp bspc
-   &kp LCTRL &kp excl  &kp STAR &kp FSLASH &kp EQUAL &kp amps    &kp hash  &kp lpar  &kp rpar  &kp SEMI &kp DQT   &kp RET
-   &kp LSHFT &kp tilde &kp PLUS &kp lbkt   &kp rbkt  &kp PRCNT   &kp at    &kp COLON &kp COMMA &kp DOT  &kp bslh  &kp SQT
+   &kp TAB   &kp GRAVE &kp LT   &kp GT     &kp MINUS &kp PIPE    &kp CARET &kp LBRC  &kp RBRC  &kp DLLR &kp UNDER &kp BSPC
+   &kp LCTRL &kp EXCL  &kp STAR &kp FSLASH &kp EQUAL &kp AMPS    &kp HASH  &kp LPAR  &kp RPAR  &kp SEMI &kp DQT   &kp RET
+   &kp LSHFT &kp TILDE &kp PLUS &kp lBKT   &kp RBKT  &kp PRCNT   &kp AT    &kp COLON &kp COMMA &kp DOT  &kp BSLH  &kp SQT
                                      &kp LGUI &trans &kp space   &kp LSHIFT &trans &kp ralt
                         >;
                 };

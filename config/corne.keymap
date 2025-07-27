@@ -63,9 +63,9 @@
                 mouse_layer {
 //
                         bindings = <
-   &kp TAB   &trans &trans   &trans   &trans    &trans     &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT &trans &kp BSPC
-   &kp LCTRL &trans &mkp MB4 &mkp MB5 &mkp LCLK &mkp RCLK  &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &kp RET
-   &kp LSHFT &trans &trans   &trans   &trans    &trans     &trans         &trans       &trans         &trans          &trans &kp SQT
+   &kp TAB   &trans &trans   &trans   &trans    &trans     &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans &kp BSPC
+   &kp LCTRL &trans &mkp MB4 &mkp MB5 &mkp LCLK &mkp RCLK  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &kp RET
+   &kp LSHFT &trans &trans   &trans   &trans    &trans     &trans         &trans         &trans       &trans          &trans &kp SQT
                                 &kp LGUI &trans &kp SPACE  &kp LSHIFT &trans &kp RALT
                         >;
                 };

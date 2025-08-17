@@ -11,6 +11,15 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                navigation_layer {
+                        if-layers = <1 2>;
+                        then-layer = <3>;
+                };
+        };
+
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -24,7 +33,7 @@
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
    &kp ESC   &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp RET
    &kp LCTRL &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp SQT
-                  &kp LGUI &sl 1 &kp SPACE   &kp LSHFT &sl 2 &kp RALT
+                  &kp LGUI &mo 1 &kp SPACE   &kp LSHFT &mo 2 &kp RALT
 
                         >;
                 };
@@ -35,10 +44,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &kp FSLH  &kp N9 &kp N8 &kp N7 &kp STAR    &mkp MB4  &msc SCRL_DOWN &msc SCRL_UP &mkp MB5   &none  &kp BSPC
-   &kp ESC   &kp MINUS &kp N3 &kp N2 &kp N1 &kp PLUS    &kp  LEFT &kp  DOWN      &kp  UP      &kp  RIGHT &kp N0 &none
-   &kp LCTRL &kp X     &kp N6 &kp N5 &kp N4 &kp PRCNT   &none     &none          &kp COMMA    &kp  DOT   &none  &none
-                            &kp LGUI &none &kp SPACE    &none &none &kp RALT
+   &kp TAB   &none  &none    &none  &kp MINUS &none    &none  &kp FSLH &none     &none   &none  &kp BSPC
+   &kp ESC   &kp N1 &kp N2   &kp N3 &kp N4    &kp N5   &kp N6 &kp N7   &kp N8    &kp N9  &kp N0 &kp RET
+   &kp LCTRL &none  &kp PLUS &none  &none     &none    &none  &kp STAR &kp COMMA &kp DOT &none  &none
+                           &kp LGUI &trans &kp SPACE   &LSHIFT &trans &kp RALT
                         >;
                 };
                 raise_layer {
@@ -49,18 +58,18 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB   &kp GRAVE &kp LT   &kp GT   &kp MINUS &kp PIPE    &kp CARET &kp LBRC  &kp RBRC  &kp DLLR &kp UNDER &kp BSPC
-   &kp LCTRL &kp EXCL  &kp STAR &kp FSLH &kp EQUAL &kp AMPS    &kp HASH  &kp LPAR  &kp RPAR  &kp SEMI &kp DQT   &kp RET
-   &kp LSHFT &kp TILDE &kp PLUS &kp LBKT &kp RBKT  &kp PRCNT   &kp AT    &kp COLON &kp COMMA &kp DOT  &kp BSLH  &kp SQT
+   &kp ESC   &kp EXCL  &kp STAR &kp FSLH &kp EQUAL &kp AMPS    &kp HASH  &kp LPAR  &kp RPAR  &kp SEMI &kp DQT   &kp RET
+   &kp LCTRL &kp TILDE &kp PLUS &kp LBKT &kp RBKT  &kp PRCNT   &kp AT    &kp COLON &kp COMMA &kp DOT  &kp BSLH  &kp SQT
                                    &kp LGUI &trans &kp SPACE   &kp LSHIFT &trans &kp RALT
                         >;
                 };
-                mouse_layer {
+                navigation_layer {
 // 
                         bindings = <
-   &kp TAB   &none &none    &none    &none     &none       &msc SCRL_LEFT &msc SCRL_DOWN &mmv MOVE_UP   &msc SCRL_UP    &msc SCRL_RIGHT &kp BSPC
-   &kp LCTRL &none &mkp MB4 &mkp MB5 &mkp LCLK &mkp RCLK   &none          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none           &kp RET
-   &kp LSHFT &none &none    &none    &none     &none       &none          &none          &none          &none           &none           &kp SQT
-                               &kp LGUI &trans &kp SPACE   &kp LSHIFT &trans &kp RALT
+   &kp TAB   &kp F1  &kp  F2  &kp  F3      &kp  F4        &kp  F5    &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &kp BSPC 
+   &kp ESC   &kp F11 &mkp MB4 &msc SCRL_UP &msc SCRL_DOWN &mkp MB5   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F12 &kp RET 
+   &kp LCTRL &none   &none    &none        &none          &none      &none    &none    &none  &none     &none   &none   
+                                         &kp LGUI &trans &kp SPACE   &kp LSHIFT &trans &kp RALT
                         >;
                 };
         };

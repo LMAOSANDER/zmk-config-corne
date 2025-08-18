@@ -44,10 +44,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &none  &none    &none  &kp MINUS &none    &none  &kp FSLH &none     &none   &none  &kp BSPC
-   &kp ESC   &kp N1 &kp N2   &kp N3 &kp N4    &kp N5   &kp N6 &kp N7   &kp N8    &kp N9  &kp N0 &kp RET
-   &kp LCTRL &none  &kp PLUS &none  &none     &none    &none  &kp STAR &kp COMMA &kp DOT &none  &none
-                           &kp LGUI &trans &kp SPACE   &LSHIFT &trans &kp RALT
+   &kp TAB   &none  &none    &none  &kp MINUS &none    &none  &kp STAR &none     &none   &none     &kp BSPC
+   &kp ESC   &kp N1 &kp N2   &kp N3 &kp N4    &kp N5   &kp N6 &kp N7   &kp N8    &kp N9  &kp N0    &kp RET
+   &kp LCTRL &none  &kp PLUS &none  &none     &none    &none  &none    &kp COMMA &kp DOT &kp FSLH  &none
+                           &kp LGUI &trans &kp SPACE   &kp LSHIFT &trans &kp RALT
                         >;
                 };
                 raise_layer {

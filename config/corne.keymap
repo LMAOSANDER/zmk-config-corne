@@ -32,7 +32,7 @@
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT  &kp BSPC
    &kp ESC   &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp RET
-   &kp LCTRL &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &bt BT_CLR_ALL
+   &kp LCTRL &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp LALT
                   &kp LGUI &mo 1 &kp SPACE   &kp LSHFT &mo 2 &kp RALT
 
                         >;
@@ -46,7 +46,7 @@
                         bindings = <
    &kp TAB   &none  &none    &none  &kp MINUS &none    &none  &kp STAR &none     &none   &none     &kp BSPC
    &kp ESC   &kp N1 &kp N2   &kp N3 &kp N4    &kp N5   &kp N6 &kp N7   &kp N8    &kp N9  &kp N0    &kp RET
-   &kp LCTRL &none  &kp PLUS &none  &none     &none    &none  &none    &kp COMMA &kp DOT &kp FSLH  &none
+   &kp LCTRL &none  &kp PLUS &none  &none     &none    &none  &none    &kp COMMA &kp DOT &kp FSLH  &kp LALT
                            &kp LGUI &trans &kp SPACE   &kp LSHIFT &trans &kp RALT
                         >;
                 };
@@ -59,17 +59,17 @@
                         bindings = <
    &kp TAB   &kp GRAVE &kp LT   &kp GT   &kp MINUS &kp PIPE    &kp CARET &kp LBRC  &kp RBRC  &kp DLLR &kp UNDER &kp BSPC
    &kp ESC   &kp EXCL  &kp STAR &kp FSLH &kp EQUAL &kp AMPS    &kp HASH  &kp LPAR  &kp RPAR  &kp SEMI &kp DQT   &kp RET
-   &kp LCTRL &kp TILDE &kp PLUS &kp LBKT &kp RBKT  &kp PRCNT   &kp AT    &kp COLON &kp COMMA &kp DOT  &kp BSLH  &kp SQT
+   &kp LCTRL &kp TILDE &kp PLUS &kp LBKT &kp RBKT  &kp PRCNT   &kp AT    &kp COLON &kp COMMA &kp DOT  &kp BSLH  &kp LALT
                                    &kp LGUI &trans &kp SPACE   &kp LSHIFT &trans &kp RALT
                         >;
                 };
                 navigation_layer {
 // 
                         bindings = <
-   &kp TAB   &kp F1  &kp  F2  &kp  F3      &kp  F4        &kp  F5    &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &kp BSPC 
-   &kp ESC   &kp F11 &mkp MB4 &msc SCRL_UP &msc SCRL_DOWN &mkp MB5   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F12 &kp RET 
-   &kp LCTRL &none   &none    &none        &none          &none      &none    &none    &none  &none     &none   &none   
-                                         &kp LGUI &trans &kp SPACE   &kp LSHIFT &trans &kp RALT
+   &kp TAB   &kp F1       &kp  F2       &kp  F3       &kp  F4        &kp  F5      &kp F6   &kp F7   &kp F8 &kp F9    &kp F10    &kp BSPC 
+   &kp ESC   &kp F11      &mkp MB4      &msc SCRL_UP  &msc SCRL_DOWN &mkp MB5     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F12    &kp RET 
+   &kp LCTRL &bt BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &none          &bt  BT_CLR  &none    &none    &none  &none     &bt BT_SEL &kp LALT
+                                                     &kp LGUI &trans &kp  SPACE   &kp LSHIFT &trans &kp RALT
                         >;
                 };
         };
